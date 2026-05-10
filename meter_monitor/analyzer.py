@@ -1,4 +1,4 @@
-from models import Reading
+from meter_monitor.models import Reading
 
 
 class Analyzer:
