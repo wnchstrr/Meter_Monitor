@@ -15,7 +15,6 @@ def test_calculate_consumption():
     assert result[0]["consumption"] == 50.0    
 
 
-
-
-
-
+def test_calculate_consumption_empty():
+    result = Analyzer().calculate_consumption([])
+    assert result == []   
