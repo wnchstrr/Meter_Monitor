@@ -2,7 +2,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-from models import Reading
+from meter_monitor.models import Reading
 
 
 class JsonStorage:

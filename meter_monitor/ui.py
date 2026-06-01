@@ -7,9 +7,11 @@ def show_menu():
     print("4. Фильтр по периоду")
     print("5. Показать график")
 
+
 def get_choice():
     """Принимает выбор пользователя"""
     return input("Выберите пункт из меню: ")
+
 
 def show_readings(readings: list[Reading]) -> None:
     if not readings:
@@ -17,4 +19,3 @@ def show_readings(readings: list[Reading]) -> None:
         return
     for index, reading in enumerate(readings, start=1):
         print(f"{index}. [{reading.meter_type}, {reading.value}, {reading.date}]")
-
