@@ -19,3 +19,5 @@ def show_readings(readings: list[Reading]) -> None:
         return
     for index, reading in enumerate(readings, start=1):
         print(f"{index}. [{reading.meter_type}, {reading.value}, {reading.date}]")
+
+
